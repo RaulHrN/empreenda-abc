@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #ed7d31;
+}
+
+section {
+  width: 100%;
+  padding: 50px 100px;
+}
+
+#Banner {
+  height: 700px;
+  background: url("../images/banner_background.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+}
+
+#Banner img {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#Banner h1 {
+  max-width: 850px;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#Banner h1 span {
+  color: #ed7d31;
+}
+
+#timer_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+  width: 700px;
+  height: 283px;
+}
+
+#timer_box p {
+  padding: 10px;
+  color: #eae2b7;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid #eae2b7;
+}
+
+#timer {
+  font-size: 64px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#timer_box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  width: 700px;
+  height: 100px;
+  background: #006e65;
+  border: none;
+  border-radius: 8px;
+  font-family: "Staatliches";
+  font-size: 40px;
+  color: #ed7d31;
+}
+
+.fa-solid{
+    margin-left: 20px;
+}
