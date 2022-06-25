@@ -95,6 +95,11 @@ section {
   border-radius: 8px;
   font-family: "Staatliches";
   font-size: 40px;
+  overflow: hidden;
+}
+
+#timer_box button:hover {
+  background-color: #ed7d31;
 }
 
 #timer_box button a{
@@ -102,6 +107,10 @@ section {
   min-width: 100%;
   min-height: 100%;
   color: #ed7d31 !important;
+}
+
+#timer_box button a:hover {
+  color: #006e65 !important;
 }
 
 .ticket {
