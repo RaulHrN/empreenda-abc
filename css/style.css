@@ -127,7 +127,7 @@ section {
   letter-spacing: 0.2em;
 }
 
-.sec_title span {
+.sec_title span, .sec_copyrigth span {
   color: #006e65;
 }
 
@@ -272,9 +272,20 @@ section {
 }
 
 .data{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.map iframe{
+    border-radius: 8px;
+}
+
+.pt-20{
+    padding-top: 20px;
 }
 
 #sponsor{
@@ -303,4 +314,77 @@ section {
 .sponsor_icon{
     width: 150px;
     height: 150px;
+}
+
+.sec_copyrigth{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (max-width: 1007px) {
+    section{
+        padding: 30px 20px;
+    }
+
+    .sec_title{
+        font-size: 36px
+    }
+
+    #location_box{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data{
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+    
+    .sponsor_icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    .sec_copyrigth{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    section{
+        padding: 20px 10px;
+    }
+
+    .sec_title{
+        font-size: 32px
+    }
+
+    #location_box{
+        margin: 0rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data{
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .sponsor_icon{
+        width: 80px;
+        height: 80px;
+    }
+
+    .sec_copyrigth{
+        font-size: 8px;
+    }
 }
