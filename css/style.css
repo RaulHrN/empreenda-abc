@@ -1,66 +1,3 @@
-body{
-    margin: 0px;
-}
-
-#location{
-    height: 400px;
-    background-color: #FBB063;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-h1{
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-}
-
-span{
-    color: #006E65;
-}
-
-#location_box{
-    margin: 0px 15rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.data{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-#sponsor{
-    height: 400px;
-    background-color: #ED7D31;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#sponsor_card{
-    margin: 0px 15rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.one{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.two{
-    display: flex;
-    justify-content: space-around;
-}
-
-.sponsor_icon{
-    width: 150px;
-    height: 150px;
-}
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap");
 
 * {
@@ -311,4 +248,50 @@ section {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#location{
+    background-color: #FBB063;
+    display: flex;
+    flex-direction: column;
+}
+
+#location_box{
+    margin: 0rem 4rem;
+    justify-content: space-around;
+    display: flex;    
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sponsor{
+    background-color: #ED7D31;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sponsor_card{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.second{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsor_icon{
+    width: 150px;
+    height: 150px;
 }
