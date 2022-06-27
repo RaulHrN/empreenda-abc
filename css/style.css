@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-size: 16px;
 }
 
 html,
@@ -21,66 +22,72 @@ a:visited {
 
 section {
   width: 100%;
-  padding: 50px 100px;
+  padding: 3.125rem 6.25rem;
 }
 
 #Banner {
-  height: 700px;
+  min-width: 100%;
+  height: fit-content;
+  padding: 10rem 3.125rem;
   background: url("../images/background_test_1.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   font-family: "Staatliches";
-  font-style: normal;
-  font-weight: 400;
 }
 
 #Banner img {
-  width: 250px;
-  height: 100px;
+  width: 15.625rem;
+  height: 6.25rem;
   position: absolute;
   left: 0;
   top: 0;
 }
 
 #Banner h1 {
-  max-width: 850px;
-  font-size: 64px;
-  line-height: 100px;
-  letter-spacing: 0.2em;
+  max-width: 50%;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.5rem;
   color: #ffffff;
   text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 #Banner h1 span {
   color: #ed7d31;
+  font-size: 2.75rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
 }
 
 #timer_box {
+  width: fit-content !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0px;
-  gap: 35px;
-  width: 700px;
-  height: 283px;
+  gap: 2.2rem;
 }
 
 #timer_box p {
-  padding: 10px;
+  padding: 0.625rem;
   color: #eae2b7;
-  font-size: 14px;
-  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.5rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border: 1px solid #eae2b7;
 }
 
 #timer {
-  font-size: 64px;
-  letter-spacing: 0.2em;
+  font-size: 2.5rem;
+  letter-spacing: 0.75rem;
   color: #ffffff;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -89,13 +96,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 100px;
+  height: 6.25rem;
   background: #006e65;
   border: none;
   border-radius: 8px;
   font-family: "Staatliches";
-  font-size: 40px;
   overflow: hidden;
 }
 
@@ -104,9 +109,8 @@ section {
 }
 
 #timer_box button a {
-  padding: 30px 20px;
-  min-width: 100%;
-  min-height: 100%;
+  font-size: 2rem;
+  padding: 1.825rem 3rem;
   color: #ed7d31 !important;
 }
 
@@ -115,7 +119,8 @@ section {
 }
 
 .ticket {
-  margin-left: 20px;
+  font-size: 2rem;
+  margin-left: 1.25rem;
 }
 
 .sec_title {
@@ -123,25 +128,30 @@ section {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 4rem;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 1rem;
+}
+
+.sec_title span {
+  font-size: inherit;
 }
 
 .sec_title span,
-.sec_copyrigth span {
+.sec_copyright span {
   color: #006e65;
 }
 
 #cards_box {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   width: auto;
   height: auto;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 3.125rem;
 }
 
 .card {
@@ -150,10 +160,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   background: #006e65;
   border-radius: 8px;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .card_title {
@@ -161,16 +171,16 @@ section {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: white;
   border-bottom: 1px solid #FCBF49;
 }
 
 .card_info{
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .card_image {
@@ -190,7 +200,7 @@ section {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .card_text {
@@ -198,32 +208,32 @@ section {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .card_name {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ed7d31;
 }
 
 .card_job {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   color: #eae2b7;
 }
 
 .card_phrase {
   font-style: italic;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
 }
 
 .card_social {
   display: flex;
-  gap: 20px;
-  font-size: 24px;
+  gap: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .card_social i {
@@ -281,12 +291,40 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
+#location {
+  background-color: #fbb063;
+  display: flex;
+  flex-direction: column;
+}
+
+#location_box {
+  margin: 0rem 4rem;
+  justify-content: space-around;
+  display: flex;
+}
+
+.data {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map iframe {
+  border-radius: 8px;
+}
+
+=======
+>>>>>>> 3e71e521adad489ea9f9321bb3b1ac0c4d629e52
 #location{
     background-color: #FBB063;
     display: flex;
     flex-direction: column;
     font-family: "Poppins";
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFF;
 }
 
@@ -311,7 +349,7 @@ section {
 }
 
 .pt-20 {
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 #sponsor, #footer{
@@ -337,8 +375,8 @@ section {
 }
 
 .sponsor_icon {
-  width: 150px;
-  height: 150px;
+  width: 13.125rem;
+  height: 13.125rem;
 }
 
 .sec_copyrigth {
@@ -349,6 +387,42 @@ section {
   text-align: center;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 1200px){
+  *{
+    font-size: 14px;
+  }
+
+  #Banner {
+    flex-direction: column;
+    padding: 5rem 3.125rem;
+    gap: 3.125rem;
+  }
+
+  #Banner img {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  #Banner h1 {
+    min-width: 80%;
+  }
+
+  #cards_box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card{
+    width: fit-content;
+    max-width: 80%;
+    gap: 1.5rem;
+  }
+
+  .card_info-sec {
+    justify-content: space-between;
+  }
+=======
 #footer{
     width: 100%;
     position: fixed;
@@ -367,15 +441,16 @@ section {
     width: 70px;
     height: 70px;
     justify-content: center;
+>>>>>>> 3e71e521adad489ea9f9321bb3b1ac0c4d629e52
 }
 
 @media screen and (max-width: 1007px) {
   section {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
   }
 
   .sec_title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   #location_box {
@@ -388,8 +463,8 @@ section {
   .data {
     text-align: center;
     font-size: 18px;
-    padding-bottom: 20px;
-    margin: 20px;
+    padding-bottom: 1.25rem;
+    margin: 1.25rem;
   }
 
   .sponsor_icon {
@@ -404,7 +479,7 @@ section {
 
 @media screen and (max-width: 640px) {
   section {
-    padding: 20px 10px;
+    padding: 1.25rem 10px;
   }
 
   .sec_title {
@@ -420,7 +495,7 @@ section {
   .data {
     text-align: center;
     font-size: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 
   .sponsor_icon {
