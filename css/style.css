@@ -14,9 +14,9 @@ body {
   background: #ed7d31;
 }
 
-a:visited{
-    text-decoration: none;
-    color: #ed7d31;
+a:visited {
+  text-decoration: none;
+  color: #ed7d31;
 }
 
 section {
@@ -26,7 +26,8 @@ section {
 
 #Banner {
   height: 700px;
-  background: url("../images/banner_background.png");
+  background: url("../images/background_test_1.png");
+  background-size: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,13 +96,22 @@ section {
   border-radius: 8px;
   font-family: "Staatliches";
   font-size: 40px;
+  overflow: hidden;
 }
 
-#timer_box button a{
+#timer_box button:hover {
+  background-color: #ed7d31;
+}
+
+#timer_box button a {
   padding: 30px 20px;
   min-width: 100%;
   min-height: 100%;
   color: #ed7d31 !important;
+}
+
+#timer_box button a:hover {
+  color: #006e65 !important;
 }
 
 .ticket {
@@ -118,7 +128,8 @@ section {
   letter-spacing: 0.2em;
 }
 
-.sec_title span, .sec_copyrigth span {
+.sec_title span,
+.sec_copyrigth span {
   color: #006e65;
 }
 
@@ -126,44 +137,68 @@ section {
   margin-top: 50px;
   width: auto;
   height: auto;
-  padding: 20px 20px 100px 20px;
+  padding: 20px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .card {
-  width: 30%;
-  max-width: 400px;
+  max-width: 45%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 50px;
+  padding: 20px;
   background: #006e65;
   border-radius: 8px;
+  gap: 30px;
+}
+
+.card_title {
+  width: 100%;
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+  border-bottom: 1px solid #FCBF49;
+}
+
+.card_info{
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .card_image {
-  width: 200px;
-  height: 200px !important;
+  width: auto;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
   overflow: hidden;
-  border-radius: 360px;
+  border-radius: 12px;
 }
 
 .card_image img {
-  width: 100%;
+  max-width: 200px;
+  max-height: 280px;
+}
+
+.card_info-sec{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .card_text {
   font-family: "Poppins";
   font-style: normal;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .card_name {
@@ -186,21 +221,17 @@ section {
 }
 
 .card_social {
-    margin-top: 50px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  gap: 20px;
   font-size: 24px;
-  
 }
 
 .card_social i {
-  margin: 0 20px;
   color: black;
 }
 
 .card_instagram:hover {
-    text-shadow: 0px 0px 45px #eae2b7;
+  text-shadow: 0px 0px 45px #eae2b7;
   background: -moz-linear-gradient(
     45deg,
     #405de6,
@@ -279,8 +310,8 @@ section {
     border-radius: 5px;
 }
 
-.pt-20{
-    padding-top: 20px;
+.pt-20 {
+  padding-top: 20px;
 }
 
 #sponsor, #footer{
@@ -290,33 +321,32 @@ section {
     justify-content: space-evenly;
 }
 
-#sponsor_card{
-    display: flex;
-    flex-direction: column;
+#sponsor_card {
+  display: flex;
+  flex-direction: column;
 }
 
-.first{
-    display: flex;
-    justify-content: space-between;
-
+.first {
+  display: flex;
+  justify-content: space-between;
 }
 
-.second{
-    display: flex;
-    justify-content: space-around;
+.second {
+  display: flex;
+  justify-content: space-around;
 }
 
-.sponsor_icon{
-    width: 150px;
-    height: 150px;
+.sponsor_icon {
+  width: 150px;
+  height: 150px;
 }
 
-.sec_copyrigth{
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
+.sec_copyrigth {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
 }
 
 #footer{
@@ -340,66 +370,65 @@ section {
 }
 
 @media screen and (max-width: 1007px) {
-    section{
-        padding: 30px 20px;
-    }
+  section {
+    padding: 30px 20px;
+  }
 
-    .sec_title{
-        font-size: 36px
-    }
+  .sec_title {
+    font-size: 36px;
+  }
 
-    #location_box{
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  #location_box {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .data{
-        text-align: center;
-        font-size: 18px;
-        padding-bottom: 20px;
-        margin: 20px;
-    }
-    
-    .sponsor_icon{
-        width: 100px;
-        height: 100px;
-    }
+  .data {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin: 20px;
+  }
 
-    .sec_copyrigth{
-        font-size: 10px;
-    }
+  .sponsor_icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sec_copyrigth {
+    font-size: 10px;
+  }
 }
 
-
 @media screen and (max-width: 640px) {
-    section{
-        padding: 20px 10px;
-    }
+  section {
+    padding: 20px 10px;
+  }
 
-    .sec_title{
-        font-size: 32px
-    }
+  .sec_title {
+    font-size: 32px;
+  }
 
-    #location_box{
-        margin: 0rem;
-        flex-direction: column;
-        align-items: center;
-    }
+  #location_box {
+    margin: 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .data{
-        text-align: center;
-        font-size: 12px;
-        padding-bottom: 20px;
-    }
+  .data {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
 
-    .sponsor_icon{
-        width: 80px;
-        height: 80px;
-    }
+  .sponsor_icon {
+    width: 80px;
+    height: 80px;
+  }
 
-    .sec_copyrigth{
-        font-size: 8px;
-    }
+  .sec_copyrigth {
+    font-size: 8px;
+  }
 }
