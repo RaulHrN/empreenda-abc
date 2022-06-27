@@ -281,6 +281,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
 #location {
   background-color: #fbb063;
   display: flex;
@@ -304,6 +305,35 @@ section {
 
 .map iframe {
   border-radius: 8px;
+=======
+#location{
+    background-color: #FBB063;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #FFF;
+}
+
+#info_box{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#location_box{
+    justify-content: space-around;
+    display: flex;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map iframe{
+    border-radius: 5px;
+>>>>>>> 25de4468c0a4487bf10bde860dd84e74e9b2f5c5
 }
 
 .pt-20 {
