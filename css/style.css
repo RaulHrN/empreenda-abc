@@ -254,25 +254,29 @@ section {
     background-color: #FBB063;
     display: flex;
     flex-direction: column;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #FFF;
+}
+
+#info_box{
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 #location_box{
-    margin: 0rem 4rem;
     justify-content: space-around;
-    display: flex;    
+    display: flex;
 }
 
 .data{
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .map iframe{
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .pt-20{
