@@ -291,34 +291,6 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-<<<<<<< HEAD
-#location {
-  background-color: #fbb063;
-  display: flex;
-  flex-direction: column;
-}
-
-#location_box {
-  margin: 0rem 4rem;
-  justify-content: space-around;
-  display: flex;
-}
-
-.data {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.map iframe {
-  border-radius: 8px;
-}
-
-=======
->>>>>>> 3e71e521adad489ea9f9321bb3b1ac0c4d629e52
 #location{
     background-color: #FBB063;
     display: flex;
@@ -379,7 +351,7 @@ section {
   height: 13.125rem;
 }
 
-.sec_copyrigth {
+.sec_copyright{
   font-family: "Poppins";
   font-weight: 700;
   font-size: 12px;
@@ -387,10 +359,33 @@ section {
   text-align: center;
 }
 
-<<<<<<< HEAD
+#footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px 0px;
+}
+
+.footer_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_icon{
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1200px){
   *{
     font-size: 14px;
+  }
+
+  section {
+    padding: 1.875rem 1.25rem;
   }
 
   #Banner {
@@ -422,32 +417,6 @@ section {
   .card_info-sec {
     justify-content: space-between;
   }
-=======
-#footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 15px 0px;
-}
-
-.footer_box{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer_icon{
-    width: 70px;
-    height: 70px;
-    justify-content: center;
->>>>>>> 3e71e521adad489ea9f9321bb3b1ac0c4d629e52
-}
-
-@media screen and (max-width: 1007px) {
-  section {
-    padding: 1.875rem 1.25rem;
-  }
 
   .sec_title {
     font-size: 2.25rem;
@@ -462,7 +431,6 @@ section {
 
   .data {
     text-align: center;
-    font-size: 18px;
     padding-bottom: 1.25rem;
     margin: 1.25rem;
   }
@@ -472,7 +440,7 @@ section {
     height: 100px;
   }
 
-  .sec_copyrigth {
+  .sec_copyright{
     font-size: 10px;
   }
 }
@@ -503,7 +471,7 @@ section {
     height: 80px;
   }
 
-  .sec_copyrigth {
+  .sec_copyright{
     font-size: 8px;
   }
 }
