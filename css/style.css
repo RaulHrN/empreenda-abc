@@ -26,11 +26,13 @@ section {
 }
 
 #Banner {
-  height: 43.75rem;
+  min-width: 100%;
+  height: fit-content;
+  padding: 10rem 3.125rem;
   background: url("../images/background_test_1.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   font-family: "Staatliches";
@@ -45,32 +47,31 @@ section {
 }
 
 #Banner h1 {
-  max-width: 55%;
+  max-width: 50%;
   text-align: center;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   font-weight: 400;
-  line-height: 6.25rem;
-  letter-spacing: 1rem;
+  line-height: 5rem;
+  letter-spacing: 0.5rem;
   color: #ffffff;
   text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 #Banner h1 span {
   color: #ed7d31;
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   font-weight: 400;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 #timer_box {
-  max-width: 45%;
+  width: fit-content !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 2.2rem;
-  width: 45%;
 }
 
 #timer_box p {
@@ -79,14 +80,14 @@ section {
   text-align: center;
   line-height: 2rem;
   font-size: 0.875rem;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border: 1px solid #eae2b7;
 }
 
 #timer {
-  font-size: 4rem;
-  letter-spacing: 1rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.75rem;
   color: #ffffff;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -108,7 +109,7 @@ section {
 }
 
 #timer_box button a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 1.825rem 3rem;
   color: #ed7d31 !important;
 }
@@ -118,7 +119,7 @@ section {
 }
 
 .ticket {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 1.25rem;
 }
 
@@ -132,8 +133,8 @@ section {
   letter-spacing: 1rem;
 }
 
-.sec_title span{
-  font-size: 4rem;
+.sec_title span {
+  font-size: inherit;
 }
 
 .sec_title span,
@@ -148,6 +149,7 @@ section {
   padding: 1.25rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3.125rem;
 }
@@ -175,7 +177,7 @@ section {
 }
 
 .card_info{
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1.875rem;
@@ -312,6 +314,8 @@ section {
 
 .map iframe {
   border-radius: 8px;
+}
+
 #location{
     background-color: #FBB063;
     display: flex;
@@ -378,6 +382,42 @@ section {
   font-size: 12px;
   font-style: italic;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+  *{
+    font-size: 14px;
+  }
+
+  #Banner {
+    flex-direction: column;
+    padding: 5rem 3.125rem;
+    gap: 3.125rem;
+  }
+
+  #Banner img {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  #Banner h1 {
+    min-width: 80%;
+  }
+
+  #cards_box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card{
+    width: fit-content;
+    max-width: 80%;
+    gap: 1.5rem;
+  }
+
+  .card_info-sec {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 1007px) {
