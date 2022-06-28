@@ -337,6 +337,16 @@ section {
   justify-content: space-evenly;
 }
 
+.no_sponsor_message{
+  width: 100%;
+  font-family: 'Staatliches';
+  letter-spacing: 0.5rem;
+  color: #006e65;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid #006e65;
+}
+
 #sponsor_card {
   margin-top: 3.125rem;
   display: flex;
@@ -369,7 +379,7 @@ section {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 1.25rem 0;
+  padding: 1.25rem 6.25rem;
 }
 
 .footer_box {
