@@ -38,12 +38,12 @@ section {
   font-family: "Staatliches";
 }
 
-#Banner img {
+#logo {
   width: 15.625rem;
   height: 6.25rem;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 1rem;
+  top: 1rem;
 }
 
 #Banner h1 {
@@ -173,10 +173,10 @@ section {
   font-weight: 400;
   font-size: 2.25rem;
   color: white;
-  border-bottom: 1px solid #FCBF49;
+  border-bottom: 1px solid #fcbf49;
 }
 
-.card_info{
+.card_info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -195,7 +195,7 @@ section {
   max-height: 280px;
 }
 
-.card_info-sec{
+.card_info-sec {
   width: 60%;
   height: 100%;
   display: flex;
@@ -237,6 +237,7 @@ section {
 }
 
 .card_social i {
+  font-size: 1.5rem;
   color: black;
 }
 
@@ -291,101 +292,109 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-#location{
-    background-color: #FBB063;
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins";
-    font-size: 1rem;
-    color: #FFF;
+#location {
+  background-color: #fbb063;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #fff;
 }
 
-#info_box{
-    text-align: center;
-    padding-bottom: 25px;
+#info_box {
+  line-height: 2rem;
+  text-align: center;
+  margin: 2rem 0 4rem;
 }
 
-#location_box{
-    justify-content: space-around;
-    display: flex;
+#location_box {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
 }
 
-.data{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.map iframe{
-    border-radius: 5px;
+.data p {
+  font-size: 1.25rem;
+  line-height: 3rem;
+  text-align: center;
 }
 
-.pt-20 {
-  padding-top: 1.25rem;
+.map iframe {
+  border-radius: 5px;
 }
 
-#sponsor, #footer{
-    background-color: #ED7D31;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#sponsor,
+#footer {
+  background-color: #ed7d31;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #sponsor_card {
+  margin-top: 3.125rem;
   display: flex;
   flex-direction: column;
 }
 
-.first {
+#sponsor_card div {
   display: flex;
-  justify-content: space-between;
-}
-
-.second {
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 18rem;
 }
 
 .sponsor_icon {
-  width: 13.125rem;
-  height: 13.125rem;
+  width: 10rem;
+  height: 10rem;
 }
 
-.sec_copyright{
+.sec_copyright {
+  padding-top: 6.25rem;
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: italic;
   text-align: center;
 }
 
-#footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 15px 0px;
+#footer {
+  box-shadow: 0px -4px 8px #00000021;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem 0;
 }
 
-.footer_box{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.footer_box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.footer_icon{
-    width: 70px;
-    height: 70px;
-    justify-content: center;
+.footer_icon {
+  width: 70px;
+  height: 70px;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1200px){
-  *{
+@media screen and (max-width: 1200px) {
+  * {
     font-size: 14px;
   }
 
   section {
-    padding: 1.875rem 1.25rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .sec_title {
+    font-size: 3rem;
   }
 
   #Banner {
@@ -404,13 +413,12 @@ section {
   }
 
   #cards_box {
-    flex-direction: column;
     width: 100%;
   }
 
-  .card{
+  .card {
     width: fit-content;
-    max-width: 80%;
+    max-width: 45%;
     gap: 1.5rem;
   }
 
@@ -418,19 +426,20 @@ section {
     justify-content: space-between;
   }
 
-  .sec_title {
-    font-size: 2.25rem;
+  .card_social {
+    gap: 2.25rem;
+  }
+
+  #info_box {
+    margin: 2rem 0rem;
   }
 
   #location_box {
-    margin: 0px;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .data {
-    text-align: center;
     padding-bottom: 1.25rem;
     margin: 1.25rem;
   }
@@ -440,18 +449,58 @@ section {
     height: 100px;
   }
 
-  .sec_copyright{
+  #sponsor_card div {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+  }
+
+  .sec_copyright {
     font-size: 10px;
   }
 }
 
-@media screen and (max-width: 640px) {
-  section {
-    padding: 1.25rem 10px;
+@media screen and (max-width: 1060px) {
+  #cards_box {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #Banner {
+    padding-top: 10rem;
+  }
+
+  #Banner h1{
+    line-height: 4em;
   }
 
   .sec_title {
-    font-size: 32px;
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+  }
+
+  .card {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  * {
+    font-size: 12px;
+  }
+
+  .sec_title {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .card {
+    max-width: 80%;
   }
 
   #location_box {
@@ -467,11 +516,16 @@ section {
   }
 
   .sponsor_icon {
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
   }
 
-  .sec_copyright{
+  .sec_copyright {
     font-size: 8px;
+  }
+
+  .footer_icon{
+    width: 3rem;
+    height: 3rem;
   }
 }
