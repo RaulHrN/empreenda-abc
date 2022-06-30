@@ -1,8 +1,8 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (window.matchMedia("(max-width:640px)").matches) {
-        if(scroll >= 3700){
+    if (window.matchMedia("(max-width:680px)").matches) {
+        if(scroll >= 2500){
             $('#footer').fadeOut();
         } else {
             $('#footer').fadeIn();
@@ -14,7 +14,7 @@ $(window).scroll(function() {
             $('#footer').fadeIn();
         }
     } else {
-        if(scroll >= 2000){
+        if(scroll >= 1700){
             $('#footer').fadeOut();
         } else {
             $('#footer').fadeIn();

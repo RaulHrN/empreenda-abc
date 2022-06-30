@@ -337,31 +337,28 @@ section {
   justify-content: space-evenly;
 }
 
-.no_sponsor_message{
-  width: 100%;
-  font-family: 'Staatliches';
-  letter-spacing: 0.5rem;
-  color: #006e65;
-  font-size: 2rem;
-  text-align: center;
-  border: 1px solid #006e65;
+.icons_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#sponsor_card {
+#sponsor_card, #supporters_card {
   margin-top: 3.125rem;
   display: flex;
   flex-direction: column;
 }
 
-#sponsor_card div {
+#sponsor_card div, #supporters_card div {
   display: flex;
   justify-content: center;
-  gap: 18rem;
+  gap: 15rem;
+  padding-top: 0.6rem;
 }
 
-.sponsor_icon {
-  width: 10rem;
-  height: 10rem;
+.icons {
+    width: 7rem;
+    height: 7rem;
 }
 
 .sec_copyright {
@@ -379,7 +376,7 @@ section {
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 1.25rem 6.25rem;
+  padding: 1rem 6.25rem;
 }
 
 .footer_box {
@@ -388,9 +385,19 @@ section {
   align-items: center;
 }
 
+#footer_card div{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#footer_card h1{
+    font-size: 1.5rem;
+}
+
 .footer_icon {
-  width: 70px;
-  height: 70px;
+  width: 3.75rem;
+  height: 3.75rem;
   justify-content: center;
 }
 
@@ -454,9 +461,14 @@ section {
     margin: 1.25rem;
   }
 
-  .sponsor_icon {
-    width: 100px;
-    height: 100px;
+  .icons_card{
+    flex-direction: column;
+  }
+
+  .icons {
+    padding-top: 0.6rem;
+    width: 7.2rem;
+    height: 7.2rem;
   }
 
   #sponsor_card div {
@@ -468,7 +480,7 @@ section {
   .sec_copyright {
     font-size: 10px;
   }
-}
+}   
 
 @media screen and (max-width: 1060px) {
   #cards_box {
@@ -499,7 +511,7 @@ section {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 640px) {
   * {
     font-size: 12px;
   }
@@ -525,7 +537,7 @@ section {
     padding-bottom: 1.25rem;
   }
 
-  .sponsor_icon {
+  .icons {
     width: 8rem;
     height: 8rem;
   }
