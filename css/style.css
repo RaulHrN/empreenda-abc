@@ -12,7 +12,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: #ed7d31;
+  background: #fbb063;
 }
 
 a:visited {
@@ -39,15 +39,12 @@ section {
 }
 
 #logo {
-  width: 15.625rem;
-  height: 6.25rem;
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
+  width: 36rem;
+  height: 11rem;
 }
 
 #Banner h1 {
-  max-width: 50%;
+  max-width: 90%;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 400;
@@ -62,6 +59,12 @@ section {
   font-size: 2.75rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
+}
+
+#banner_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #timer_box {
@@ -104,7 +107,7 @@ section {
   overflow: hidden;
 }
 
-#timer_box button:hover {
+#timer_box button:hover, #footer_ticket button:hover {
   background-color: #ed7d31;
 }
 
@@ -114,7 +117,7 @@ section {
   color: #ed7d31 !important;
 }
 
-#timer_box button a:hover {
+#timer_box button a:hover, #footer_ticket button a:hover {
   color: #006e65 !important;
 }
 
@@ -293,12 +296,12 @@ section {
 }
 
 #location {
-  background-color: #fbb063;
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins";
-  font-size: 1rem;
-  color: #fff;
+    background-color: #ed7d31;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-size: 1rem;
+    color: #fff;
 }
 
 #info_box {
@@ -331,16 +334,20 @@ section {
 
 #sponsor,
 #footer {
-  background-color: #ed7d31;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sponsor {
+    flex-direction: column;
+    align-items: center;
 }
 
 .icons_card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 12rem;
+    padding-bottom: 2rem;
 }
 
 #sponsor_card, #supporters_card {
@@ -356,9 +363,18 @@ section {
   padding-top: 0.6rem;
 }
 
-.icons {
+.sponsor_icons, .supporters_icons {
     width: 7rem;
     height: 7rem;
+    border-radius: 50%;
+}
+
+.sponsor_icons{
+    border: 5px solid #006e65;
+}
+
+.supporters_icons{
+    border: 5px solid #FFF;
 }
 
 .sec_copyright {
@@ -371,18 +387,20 @@ section {
 }
 
 #footer {
-  box-shadow: 0px -4px 8px #00000021;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 1rem 6.25rem;
+    background-color: #fbb063;
+    box-shadow: 0px -4px 8px #00000021;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 6.25rem;
 }
 
-.footer_box {
+#footer_icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 80%;
 }
 
 #footer_card div{
@@ -395,10 +413,56 @@ section {
     font-size: 1.5rem;
 }
 
-.footer_icon {
+.footer_sponsor, .footer_supporters {
   width: 3.75rem;
   height: 3.75rem;
   justify-content: center;
+  border-radius: 50%;
+}
+
+.footer_sponsor{
+    border: 2px solid #006E65;
+}
+
+.footer_supporters{
+    border: 2px solid #FFF;
+}
+
+#footer_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10%;
+}
+
+#footer_social i{
+    font-size: 20px;
+}
+
+.icon_instagram{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border-radius: 5px;
+}
+
+.icon_facebook{
+    color: #3b5998;
+}
+
+#footer_ticket{
+    width: 10%;
+}
+
+#footer_ticket button{
+    color: #ed7d31 !important;
+    background: #006e65;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    width: 9rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -421,8 +485,8 @@ section {
   }
 
   #Banner img {
-    width: 10rem;
-    height: 4rem;
+    width: 25rem;
+    height: 10rem;
   }
 
   #Banner h1 {
@@ -463,6 +527,7 @@ section {
 
   .icons_card{
     flex-direction: column;
+    gap: 2rem;
   }
 
   .icons {
@@ -479,6 +544,7 @@ section {
 
   .sec_copyright {
     font-size: 10px;
+    padding-top: 3.25rem;
   }
 }   
 
@@ -495,10 +561,6 @@ section {
 @media screen and (max-width: 840px) {
   #Banner {
     padding-top: 10rem;
-  }
-
-  #Banner h1{
-    line-height: 4em;
   }
 
   .sec_title {
@@ -545,9 +607,17 @@ section {
   .sec_copyright {
     font-size: 8px;
   }
+  
+  #footer_icons{
+    width: 70%;
+    justify-content: flex-end;
+  }
 
-  .footer_icon{
-    width: 3rem;
-    height: 3rem;
+  #footer_card div{
+    gap: 3rem;
+  }
+
+  #footer_social, #footer_ticket{
+    width: 15%;
   }
 }
