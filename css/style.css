@@ -625,6 +625,15 @@ section {
     .card {
       max-width: 85%;
     }
+
+    #footer_icons{
+      width: 70%;
+      justify-content: flex-end;
+    }
+  
+    #footer_card div{
+      gap: 3rem;
+    }
   }
 
   @media screen and (max-width: 640px) {
@@ -675,4 +684,3 @@ section {
       width: 15%;
     }
   }
-}
